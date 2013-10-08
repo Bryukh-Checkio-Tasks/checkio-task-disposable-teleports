@@ -159,5 +159,48 @@ fieldset[disabled] .btn {
     background-color: #eeeeee;
 }
 
-/* Your CSS */
-/*          */
+.tryit_results .tool{
+    margin-top: 5px;
+    color: #294270;
+    font-family: verdana;
+    width: 340;
+}
+
+.tryit_results .tool .input-test{
+    margin-top: 5px;
+    color: #294270;
+    font-weight: bold;
+}
+
+.tryit_results .tryit-info {
+    text-align: center;
+    width: 100px;
+    font-size: 14px;
+}
+
+
+.tryit_results .tooltip{
+    z-index: 9999;
+    /*float: left;*/
+    position: absolute;
+
+    top: 100px;
+    left: 100px;
+    display: none;
+    width: 100px;
+    font-size: 14px;
+    background-color: #8FC7ED;
+    /*opacity: 0.5;*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;;
+}
+
+
+.tryit_results .checkio-result {
+    margin-top: 0px;
+    font-size: 14px;
+    text-align: center;
+    color: #294270;
+    width: 100px;
+}

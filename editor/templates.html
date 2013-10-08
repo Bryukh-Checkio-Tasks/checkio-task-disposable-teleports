@@ -2,8 +2,10 @@
     <div class="animation-content center-exp">
         <div class="output"></div>
         <div class="explanation center-exp"></div>
-        <div class="answer"></div>
-        <div class="call"></div>
+        <div class="call">
+            <span class="call-result"></span>
+            <span class="call-checkio"></span>
+        </div>
     </div>
 </script>
 
@@ -11,20 +13,14 @@
     <div class="tryit-content center-exp">
         <table class="tool">
             <tr>
-                <td>
-                    <input type="text" value="test">
-                </td>
-                <td>
-                    <button class="bn-check btn">Action</button>
-                </td>
+            <td class="tryit-canvas center-exp" style="position: relative">
+                <div class="tooltip">Drag to create and click to remove line</div>
+            </td>
+            <td class="checkio-result">
+                <button type="button" class="bn-check btn">Check route</button>
+                <span class="in-result">&nbsp;<br>&nbsp;</span>
+            </td>
             </tr>
-            <tr>
-                <td colspan="2" class="checkio-result">
-                    Result:<br>
-                    <span class="checkio-result-in">&nbsp;</span>
-                </td>
-            </tr>
-
         </table>
     </div>
 </script>
