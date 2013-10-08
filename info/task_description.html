@@ -1,39 +1,43 @@
 <p>
-    <i>( Describe task in general )</i>
+    <img class="for_info_only"
+         style="float: left"
+         title="dteleports-pic"
+         src="/media/files/sophieteleports.png"
+         alt="dteleports-pic"
+         height="150px"/>
+    The island has eight stations, which are connected by teleports. However, the teleports take a very long time to
+    recharge so you can only use each one once. After you use a teleport, it will not work again. Begin at number 1 and
+    try to get around to all the stations before returning to the starting point. The map of the teleports is presented
+    as a string, in which the comma-separated list represents teleports. Each teleport is named by the two digits (ex.
+    12 or 21) of the stations that it connects. All tests require you to provide a route which passes through all
+    stations. A route is presented as a string of the station numbers in the sequence in which they must be attended
+    (ex. 123456781).
+</p>
+<p class="for_info_only" style="text-align: center">
+    <img title="disposable-teleports" src="{{ MEDIA }}disposable-teleports.png" alt="disposable-teleports" width="600px"/>
+</p>
+<p class="for_editor_only" style="text-align: center">
+    <img title="disposable-teleports" src="{{ MEDIA }}disposable-teleports.png" alt="disposable-teleports" width="380px"/>
 </p>
 
 <p>
-    Sum two passed ints
+    <strong>Input: </strong>A string containing a list of comma-separated numbers representing available
+    teleports. Each teleport contains two digits (the numbers of the stations that it connects)
 </p>
-
-<p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
-</p>
-
-<p><i>( Explain input and output values )</i></p>
 <p>
-    <strong>Input: </strong> Two arguments. Both are int
+    <strong>Output:</strong> A string containing a sequence of station numbers.
 </p>
-
-<p>
-    <strong>Output: </strong> Int. 
-</p>
-
-
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
-    <p>
-        <strong>Example:</strong>
-    </p>
-    <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
-    </pre>
+    <p><strong>Example:</strong></p>
+<pre class="brush: python">checkio("12,23,34,45,56,67,78,81") == "123456781"
+checkio("12,28,87,71,13,14,34,35,45,46,63,65") == "1365417821"
+checkio("12,15,16,23,24,28,83,85,86,87,71,74,56") == "12382478561"
+checkio("13,14,23,25,34,35,47,56,58,76,68") == "132586741"
+</pre>
 </div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
+    It's a classical task for learning graphs.
 </p>
