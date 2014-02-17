@@ -24,22 +24,22 @@ def check_route(teleports_str, route):
     start = 1
     teleports_map = convert_teleports(teleports_str)
     if not route:
-        return False, '', "Route not started"
+        return False, '', "The route is not started"
     if route[0] != '1' or route[-1] != '1':
-        return False, '', "Route must started and ended at 1"
+        return False, '', "The route must start and end at 1"
     ch_route = route[0]
     for i in range(len(route) - 1):
         try:
             step = tuple(sorted([int(route[i]), int(route[i + 1])]))
         except ValueError:
-            return False, ch_route, "Route must contain only digits"
+            return False, ch_route, "The route must contain only digits"
         if not step in teleports_map:
             return False, ch_route, "No way from {0} to {1}".format(route[i], route[i + 1])
         teleports_map.remove(step)
         ch_route += route[i + 1]
     for s in range(1, 9):
         if not str(s) in ch_route:
-            return False, ch_route, "You forget about {0}".format(s)
+            return False, ch_route, "You forgot about {0}".format(s)
     return True, ch_route, "Success"
 
 
