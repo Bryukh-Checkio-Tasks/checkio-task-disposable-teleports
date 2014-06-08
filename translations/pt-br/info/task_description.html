@@ -1,0 +1,52 @@
+<p>
+    <img class="for_info_only"
+         style="float: left"
+         title="dteleports-pic"
+         src="/media/files/sophieteleports.png"
+         alt="dteleports-pic"
+         height="150px"/>
+	A ilha possui oito estações conectadas por uma rede de teletransportes;
+	no entanto, os teletransportes demoram muito tempo para recarregar.
+	Isso significa que você pode utilizar cada um apenas uma vez.
+    Depois de usar um teletransporte, ele vai desligar e não vai mais funcionar.
+    Para esta tarefa, você deve começar no número 1 e tentar viajar por todas as estações antes de retornar ao ponto de partida.
+    O mapa de teletransportes é apresentado como uma string na qual a lista separada por vírgulas representa o teletransporte.
+    A cada teletransporte recebe o nome da estação à qual é conectado. Esse nome consiste de dois dígitos, tais como '12' ou '32'.
+    Cada teste requer que você forneça uma rota que passe por todas estações.
+    Uma rota é apresentada como uma string com os números das estações na ordem em que foram visitadas.
+    (ex.: 123456781).
+</p>
+<p class="for_info_only" style="text-align: center">
+    <img title="disposable-teleports" src="{{ MEDIA }}disposable-teleports.png" alt="disposable-teleports" width="600px"/>
+</p>
+<p class="for_editor_only" style="text-align: center">
+    <img title="disposable-teleports" src="{{ MEDIA }}disposable-teleports.png" alt="disposable-teleports" width="380px"/>
+</p>
+
+<p>
+    <strong>Entrada: </strong> Um mapa de teletransportes no formato de uma string.
+</p>
+<p>
+    <strong>Saída:</strong> A sequência de estações visitadas no formato de uma string.
+</p>
+
+<div class="for_info_only">
+    <p><strong>Example:</strong></p>
+<pre class="brush: python">checkio("12,23,34,45,56,67,78,81") == "123456781"
+checkio("12,28,87,71,13,14,34,35,45,46,63,65") == "1365417821"
+checkio("12,15,16,23,24,28,83,85,86,87,71,74,56") == "12382478561"
+checkio("13,14,23,25,34,35,47,56,58,76,68") == "132586741"
+</pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Como é utilizado: </strong>
+    Essa tarefa é outro exemplo do problema de busca em grafos.
+	É como tentar encontrar uma rota na qual você não pode pisar no mesmo lugar mais de uma vez.
+</p>
+
+
+<p>
+    <strong>Pré-condição:</strong>|stations| = 8<br>
+    Teletransportes não são utilizados mais de uma vez e não possuem direção.
+</p>
